@@ -1,4 +1,6 @@
 import React from 'react'
+import { cocktailsList } from '../../Constant/index'
+
 
 function Cocktails() {
   return (
@@ -8,10 +10,19 @@ function Cocktails() {
 
         <div className="list">
             <div className="popular">
-                <h2>Most Populat Vudka</h2>
+                <h2>Most Populat Vudka Cocktails</h2>
 
                 <ul>
-                    
+                    {cocktailsList.map((drink) => (
+                      <li key={drink.name}>
+                        <div className='md:me-28'>
+                          <h3>{drink.name}</h3>
+                          <p>{drink.country} | {drink.detail}</p>
+                        </div>
+                        <span>{drink.price}</span>
+                      </li>
+                    )
+                    )}
                 </ul>
             </div>
         </div>
