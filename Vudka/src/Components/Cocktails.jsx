@@ -20,7 +20,7 @@ function Cocktails() {
       x : -100, y: 100
     })
     .from('#c-right-leaf', {
-      x : 100, y: 100
+      x : 60, y: 100
     })
   })
 
@@ -34,7 +34,7 @@ function Cocktails() {
                 <h2>Most Popular Vudka Cocktails</h2>
 
                 <ul>
-                    {cocktailLists .map((drink) => (
+                    {cocktailLists.map((drink) => (
                       <li key={drink.name}>
                         <div className='md:me-28'>
                           <h3>{drink.name}</h3>
@@ -51,7 +51,7 @@ function Cocktails() {
                 <h2>Most loved mocktails</h2>
 
                 <ul>
-                    {mockTailLists .map((drink) => (
+                    {mockTailLists.map((drink) => (
                       <li key={drink.name}>
                         <div className='me-28'>
                           <h3>{drink.name}</h3>
