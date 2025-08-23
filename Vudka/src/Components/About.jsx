@@ -1,3 +1,4 @@
+import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { SplitText } from 'gsap/SplitText'
 import React from 'react'
@@ -8,13 +9,13 @@ const About = () => {
       type: 'words'
     })
 
-    const scrollTimeline - gsap.timeline({
+    const scrollTimeline = gsap.timeline({
       scrollTrigger: {
         trigger: '#about',
         start: 'top center'
       }
     })
-
+    scrollTimeline
     .from(titleSplit.words, {
       opacity: 0,
       duration: 1, 
@@ -28,7 +29,9 @@ const About = () => {
       ease: 'power1.inOut',
       stagger: 0.04
     }, '-=0.5' )
-  })
+  });
+
+
   return (
     <div id='about'>
       <div className="mb-16 md:px-0 px-5">
