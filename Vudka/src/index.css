@@ -230,7 +230,7 @@ body {
         .bottom-grid {
             @apply grid grid-cols-1 md:grid-cols-12 gap-5 md:px-0 px-5;
 
-            > div {
+             div{
                 @apply rounded-3xl overflow-hidden h-72 relative;
             }
 
@@ -277,7 +277,7 @@ body {
     #menu {
         @apply relative w-full md:mt-40 mt-0 2xl:px-0 px-5 py-20 radial-gradient;
 
-        #m-left-leaf {
+        #m-left-leaf{
             @apply object-contain absolute -bottom-20 left-0 md:w-fit w-1/3;
         }
 

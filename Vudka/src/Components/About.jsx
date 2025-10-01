@@ -79,12 +79,12 @@ const About = () => {
       </div>
       <div className='bottom-grid'>
         <div className='md:col-span-8'>
-            <div className='noisy'/>
+            <div className='noisy' />
             <img src="/images/abt3.png" alt="grid-img-1" />
         </div>
 
         <div className='md:col-span-4'>
-            <div className='noisy'/>
+            <div className='noisy' />
             <img src="/images/abt4.png" alt="grid-img-1" />
         </div>
       </div>
